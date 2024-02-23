@@ -19,7 +19,7 @@ This project is licensed under the terms of the MIT license.
 ```
 MIT License
 
-Copyright (c) [year] Roshan
+Copyright (c) [2024] Roshan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
