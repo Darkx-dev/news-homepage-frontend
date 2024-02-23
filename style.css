@@ -1,0 +1,192 @@
+@font-face {
+  font-family: Inter;
+  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter !important;
+}
+
+body {
+  padding: 2rem 7rem;
+  width: 100%;
+  min-height: 100vh;
+}
+
+header > nav {
+  display: flex;
+  padding: 0 0 2rem 0;
+  justify-content: space-between;
+}
+header > nav div.navs-container ul.navs {
+  list-style: none;
+  display: flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  font-weight: 400;
+  justify-content: space-between;
+}
+header > nav div.navs-container ul.navs li.nav-item > a {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+main div.main-head {
+  display: flex;
+  flex-direction: column;
+  grid-area: 1/1/3/3;
+}
+main div.main-head div.main-image-container img {
+  width: 100%;
+}
+main div.main-head div.main-head-bottom {
+  padding: 1rem;
+  display: grid;
+  gap: 3.9rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+main div.main-head div.main-head-bottom h1 {
+  line-height: 4rem;
+  font-size: 3.9rem;
+  font-weight: 800;
+}
+main div.main-head div.main-head-bottom div.main-head-sub-r {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main div.main-head div.main-head-bottom div.main-head-sub-r p {
+  line-height: 1.5rem;
+  text-align: start;
+}
+main div.main-head div.main-head-bottom div.main-head-sub-r button {
+  padding: 1rem 1.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+  border: none;
+  background-color: hsl(5, 85%, 63%);
+  color: white;
+}
+main div.main-head div.main-head-bottom div.main-head-sub-r button:hover {
+  cursor: pointer;
+  background-color: hsl(240, 100%, 5%);
+}
+main div.main-sidebar {
+  padding: 2rem 2rem;
+  background-color: hsl(240, 100%, 5%);
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-area: 1/3/3/4;
+}
+main div.main-sidebar ul {
+  display: flex;
+  letter-spacing: 0.2px;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  list-style: none;
+}
+main div.main-sidebar ul li {
+  display: flex;
+  flex-direction: column;
+}
+main div.main-sidebar ul li h1 {
+  color: hsl(35, 77%, 62%);
+}
+main div.main-sidebar ul li h3 {
+  transition: color 0.1s ease-in-out;
+  margin: 0 0 10px 0;
+}
+main div.main-sidebar ul li h3:hover {
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
+}
+main div.main-sidebar ul li p {
+  color: hsl(233, 8%, 79%);
+  font-weight: 400;
+  font-size: 16px;
+}
+main div.main-sidebar ul :not(:first-child) {
+  padding: 0 0 1.5rem 0;
+}
+main div.main-sidebar ul :not(:first-child, :last-child) {
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+main div.main-strip {
+  display: grid;
+  grid-area: 3/1/4/4;
+  -moz-column-gap: 4.6rem;
+       column-gap: 4.6rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+main div.main-strip div.main-strip-image-container {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main div.main-strip div.main-strip-image-container img {
+  height: 9rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main div.main-strip div.main-strip-item {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 2.5fr;
+}
+main div.main-strip div.main-strip-item h1 {
+  color: hsl(233, 8%, 79%);
+}
+main div.main-strip div.main-strip-item h3 {
+  transition: color 0.1s;
+  cursor: pointer;
+  font-weight: 800;
+}
+main div.main-strip div.main-strip-item h3:hover {
+  color: #ff0000;
+}
+main div.main-strip div.main-strip-item p {
+  color: hsl(236, 13%, 42%);
+  line-height: 1.6rem;
+}
+main div.main-strip div.main-strip-item div.main-strip-item-info {
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    padding: 1rem;
+    background-color: red;
+  }
+  main {
+    display: block;
+  }
+  main div.main-head div.main-image-container img {
+    src: url(/assets/images/image-web-3-mobile.jpg);
+  }
+  main div.main-head div.main-head-bottom {
+    display: block;
+  }
+  main div.main-head div.main-head-bottom h1.main-head-sub-l {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  main div.main-strip {
+    display: block;
+  }
+  div.navs-container {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
