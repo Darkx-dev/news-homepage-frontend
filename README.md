@@ -2,6 +2,8 @@
 
 This is a simple news homepage built using HTML and Sass.
 
+[[Demo](https://darkx-dev.github.io/news-homepage-frontend/)]
+
 ## Description
 
 This project contains the HTML and Sass files for a news homepage. It includes a header with navigation, main content section with featured articles, and a sidebar with additional news items.
